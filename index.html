@@ -10,24 +10,22 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
- <input type="text" name = "txt_ip" id = "ip" value = "localhost">
- <button type = "button" id="connect" name ="btn_con">
- 	接続
- </button>
- <br>
- <a href = "#" class = "button" id = "buy">買う！</a>
- <!--<button type = "button" id="buy" name ="btn_buy">
- 	買う！
- </button>-->
- <!--<input type = "text" data-name = "message" size = "100">-->
- <hr>
- <div data-name="chat"></div>
+	<div id = "header" class ="container">
+ 		<input type="text" name = "txt_ip" id = "ip" value = "localhost">
+ 		<button type = "button" id="connect" name ="btn_con">接続</button>
+ 	</div>
+ 	<div id = "main_button" class = "container">
+ 		<a href = "#" class = "button" id = "buy">買う！</a>
+ 	</div>
+ 	<hr>
+ 	<div data-name="chat" class = "container"></div>
 <!-- コンテンツを記述 -->
  
 <!-- スクリプトでブロッキングを起こすものはここに記述
 ブロッキングを起こす原因としては、CSSのセレクタ操作（IE）、負荷の高いDOM操作、多数のスクリプトなど -->
 <!-- SCRIPTS -->
 <!-- 例: <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="lib/connection.js"></script>
 <script type="text/javascript" src="lib/send.js"></script>
 <script type="text/javascript" src="lib/event.js"></script>
 </body>
