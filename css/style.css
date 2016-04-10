@@ -1,3 +1,13 @@
+body {
+  margin: 0px;
+  background-color: #333;
+  color: #fff;
+}
+
+.container {
+  padding: 10px;
+}
+
 .button {
   display: inline-block;
   width: 200px;
@@ -12,6 +22,7 @@
   -webkit-transition: all .3s;
   transition: all .3s;
   background-color: #333;
+  border: 2px solid #fff;
   color: #fff;
 }
 

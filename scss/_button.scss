@@ -23,6 +23,7 @@
 	background:{
 		color:#333;
 	}
+	border:2px solid #fff;
 	color: #fff;
 	&:before{
 		@include button_base;
