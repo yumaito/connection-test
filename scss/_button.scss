@@ -1,0 +1,40 @@
+@mixin button_base{
+	position: absolute;
+	z-index: -1;
+	display: block;
+	content:'';
+}
+@mixin button_base2{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	-webkit-transition:all .3s;
+	transition: all .3s;
+}
+.button{
+	display: inline-block;
+	width: 200px;
+	height:54px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 54px;
+	outline:none;
+	@include button_base2;
+	background:{
+		color:#333;
+	}
+	color: #fff;
+	&:before{
+		@include button_base;
+		@include button_base2;
+	}
+	&:after{
+		@include button_base;
+		@include button_base2;
+	}
+	&:hover{
+		background:{
+			color:#59b1eb;
+		}
+	}
+}
