@@ -3,15 +3,11 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
  	<meta http-equiv="Content-Type" content = "text/html; charset=utf-8">
-<!-- ページのタイトルを記述 -->
-<title>Send Sample</title>
+	<!-- ページのタイトルを記述 -->
+	<title>Send Sample</title>
  
-<!-- パフォーマンスのために使用する文字のエンコーディングを記述
-     参考: https://developers.google.com/speed/docs/best-practices/rendering#SpecifyCharsetEarly -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-
-
+	<link rel = "stylesheet" type = "text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
  <input type="text" name = "txt_ip" id = "ip" value = "localhost">
@@ -19,9 +15,10 @@
  	接続
  </button>
  <br>
- <button type = "button" id="buy" name ="btn_buy">
+ <a href = "#" class = "button" id = "buy">買う！</a>
+ <!--<button type = "button" id="buy" name ="btn_buy">
  	買う！
- </button>
+ </button>-->
  <!--<input type = "text" data-name = "message" size = "100">-->
  <hr>
  <div data-name="chat"></div>
