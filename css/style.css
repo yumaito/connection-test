@@ -16,6 +16,14 @@ body {
   padding: 10px;
 }
 
+#history {
+  width: 200px;
+  height: 200px;
+  border: 2px #fff solid;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 #display {
   width: 100%;
   height: 100%;
