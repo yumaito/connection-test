@@ -13,7 +13,8 @@ body {
 }
 
 .container {
-  padding: 10px;
+  padding: 5px;
+  margin: 5px;
 }
 
 #history {
@@ -27,6 +28,17 @@ body {
 #display {
   width: 100%;
   height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .button {

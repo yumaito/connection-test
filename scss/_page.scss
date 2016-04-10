@@ -1,3 +1,10 @@
+@mixin windowSetting(){
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+}
 $black:#333;
 $white:#fff;
 html{
@@ -15,7 +22,8 @@ body{
 	height:100%;
 }
 .container{
-	padding: 10px;
+	padding: 5px;
+	margin: 5px;
 }
 #history{
 	width:200px;
@@ -27,7 +35,8 @@ body{
 	}
 }
 #display{
-	width:100%;
-	height:100%;
-
+	@include windowSetting();
+}
+#video{
+	@include windowSetting();
 }
