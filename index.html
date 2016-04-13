@@ -17,15 +17,28 @@
  		<input type="text" name = "txt_ip" id = "ip" value = "localhost">
  		<button type = "button" id="connect" name ="btn_con">接続</button>
  	</div>
+ 	<hr>
  	<div id = "main_button" class = "container">
+ 	<p>SHAKE!!!!</p>
  		<!--<a href = "#" class = "button" id = "buy">買う！</a>-->
  	</div>
- 	<hr>
+ 	<div id = "values" class = "container">
+ 		<div id="acceleration">
+ 			<p>Acceleration [m/s^2]</p>
+ 			<p>x: <span id="acc-x"></span></p>
+ 			<p>y: <span id="acc-y"></span></p>
+ 			<p>z: <span id="acc-z"></span></p>
+ 			<p>合成値: <span id = "composite"></span></p>
+ 		</div>
+ 	</div>
+ 	
  	<!--<div data-name="chat" id = "history" class = "container"></div>-->
 <!-- SCRIPTS -->
 <!-- 例: <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="lib/accel.js"></script> 
 <script type="text/javascript" src="lib/connection.js"></script>
 <script type="text/javascript" src="lib/send.js"></script>
 <script type="text/javascript" src="lib/event.js"></script>
+
 </body>
 </html>

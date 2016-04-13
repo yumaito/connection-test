@@ -10,7 +10,7 @@
 </head>
 <body>
 <div id = "video">
-	<video controls>
+	<video controls id = "v">
 		<source src="movie/charger.mp4" type = "video/mp4">
 		<source src="movie/charger.webm" type = "video/webm">
 		<p>動画を再生するには、videoタグをサポートしたブラウザが必要です。</p>
@@ -18,10 +18,41 @@
 </div>
 <div id = "display">
 </div>
+<div id ="footer">
+	<p></p>
+</div>
 <!-- SCRIPTS -->
 <!-- 例: <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
+<script type="text/javascript" src="lib/display_circle.js"></script>
+<script>
+	var currentPrice = 0;
+	var testTimer;
+	dispPrice();
+	function startTimer(){
+		testTimer = setInterval(function(){
+			dispPrice();
+			if(currentPrice > 0){
+				currentPrice--;
+			}
+		},50);
+	}
+	function stopTimer(){
+		clearInterval(testTimer);
+	}
+	/*$(function(){
+		startTimer();
+	})*/
+	/*$(function(){
+		setInterval(function(){
+			dispPrice();
+			if(currentPrice > 0){
+				currentPrice--;
+			}
+		},50);
+	});*/
+</script>
 <script type="text/javascript" src="lib/connection.js"></script>
 <script type="text/javascript" src="lib/receive.js"></script>
-<script type="text/javascript" src="lib/display_circle.js"></script>
+
 </body>
 </html>

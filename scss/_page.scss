@@ -7,6 +7,9 @@
 }
 $black:#333;
 $white:#fff;
+$awhite:rgba(255,255,255,0.5);
+$red:#DC143C;
+$h:100px;
 html{
 	width:100%;
 	height:100%;
@@ -41,5 +44,24 @@ body{
 	@include windowSetting();
 	video{
 		//width: 100%;
+	}
+}
+#footer{
+	background: {
+		color:$awhite;
+	}
+	color: $red;
+	height:$h;
+	z-index: 100;
+	width: 100%;
+	position: absolute;
+	bottom:0;
+	p{
+		margin: 0;
+		padding: 0;
+		text-align: right;
+		font:{
+			size:70px;
+		}
 	}
 }
