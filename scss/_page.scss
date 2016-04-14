@@ -9,6 +9,7 @@ $black:#333;
 $white:#fff;
 $awhite:rgba(255,255,255,0.5);
 $red:#DC143C;
+$yellow:#ffff33;
 $h:100px;
 html{
 	width:100%;
@@ -50,7 +51,9 @@ body{
 	background: {
 		color:$awhite;
 	}
-	color: $red;
+	box-sizing:border-box;
+	border: 5px solid $yellow;
+	color: $yellow;
 	height:$h;
 	z-index: 100;
 	width: 100%;
@@ -63,5 +66,7 @@ body{
 		font:{
 			size:70px;
 		}
+		height:100%;
+		//line-height: 100%;
 	}
 }

@@ -42,7 +42,9 @@ body {
 
 #footer {
   background-color: rgba(255, 255, 255, 0.5);
-  color: #DC143C;
+  box-sizing: border-box;
+  border: 5px solid #ffff33;
+  color: #ffff33;
   height: 100px;
   z-index: 100;
   width: 100%;
@@ -55,6 +57,7 @@ body {
   padding: 0;
   text-align: right;
   font-size: 70px;
+  height: 100%;
 }
 
 .button {
